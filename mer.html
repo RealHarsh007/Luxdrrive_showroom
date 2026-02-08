@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercedes - LuxeDrive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="card.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <script  src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">LuxeDrive</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">LuxeDrive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBrands">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarBrands">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/bmw.html">BMW</a></li>
+                <li><a class="dropdown-item" href="/audi.html">Audi</a></li>
+                <li><a class="dropdown-item" href="/lambor.html">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="/mer.html">Mercedes</a></li>
+                <li><a class="dropdown-item" href="/">Porsche</a></li>
+                <li><a class="dropdown-item" href="#">Ferrari</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Car Type</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All</a></li>
+                <li><a class="dropdown-item" href="#">SUV</a></li>
+                <li><a class="dropdown-item" href="#">Sedan</a></li>
+                <li><a class="dropdown-item" href="#">Convertible</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-gear"></i> Service & Accessories <i class="fa-solid fa-wrench"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Service</a></li>
+                <li><a class="dropdown-item" href="#">Washing & Painting</a></li>
+                <li><a class="dropdown-item" href="#">Repairing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <section class="cars-section">
+    <div class="text_section">
+      <img src="/logos/mercedes-logo.png" class="text_img" alt="Mercedes Logo" />
+      <span class="f_text">Mercedes Collection</span>
+    </div>
+<!-- Filter Dropdown (No Extra Changes, Only Functional) -->
+<div style="margin: 20px 0; text-align: left;">
+  <section><b>Car Type</b>
+  <select id="typeFilter" style="padding: 8px 12px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; background-color:;">
+    <option value="" disabled>Car Type</option> 
+    <option value="all">All</option>
+    <option value="suv">SUV</option>
+    <option value="sedan">Sedan</option>
+    <option value="convertible">Convertible</option>
+    <option value="sports">Sports</option>
+    <option value="electric">Electric</option>
+  </select></section>
+</div>
+
+<!-- Mercedes Car Grid -->
+<div class="car-grid">
+  <div class="car-card" data-type="sedan">
+    <img src="cars/mer/g63 sclass.png" alt="S-Class">
+    <h3>Mercedes S-Class</h3>
+    <p>Luxury Sedan • 429 HP • Turbocharged</p>
+    <p>₹1.60 Cr</p>
+    
+    <button>View Details</button>
+
+  </div>
+  <div class="car-card" data-type="suv">
+    <img src="cars/mer/merc gla.png" alt="GLE Coupe">
+    <h3>Mercedes GLE Coupe</h3>
+    <p>Luxury SUV • 362 HP • AMG Styling</p>
+    <p>₹96.40 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="sedan">
+    <img src="cars/mer/merc4.png" alt="E-Class">
+    <h3>Mercedes E-Class</h3>
+    <p>Executive Sedan • 281 HP • Sunroof</p>
+    <p>₹88.00 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="convertible">
+    <img src="cars/mer/merc10.png" alt="AMG E53 Cabriolet">
+    <h3>AMG E53 Cabriolet</h3>
+    <p>Convertible • 429 HP • 4MATIC+</p>
+    <p>₹1.30 Cr</p>
+    <button>View Details</button>
+  </div>
+  
+  <div class="car-card" data-type="sports">
+    <img src="cars/mer/merc7.png" alt="AMG GT Coupe">
+    <h3>AMG GT Coupe</h3>
+    <p>Performance Coupe • 469 HP • RWD</p>
+    <p>₹2.72 Cr</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="suv">
+    <img src="cars/mer/merc8.png" alt="GLS SUV">
+    <h3>Mercedes GLS</h3>
+    <p>Full-size SUV • 362 HP • 7-Seater</p>
+    <p>₹1.35 Cr</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="electric">
+    <img src="cars/mer/merc9.png" alt="EQC 400">
+    <h3>Mercedes EQC 400</h3>
+    <p>Electric SUV • 402 HP • 471 km range</p>
+    <p>₹99.50 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="suv">
+    <img src="cars/mer/merc gla.png" alt="GLB SUV">
+    <h3>Mercedes GLB</h3>
+    <p>Compact SUV • 190 HP • 7-Seater</p>
+    <p>₹63.80 Lakh</p>
+    <button>View Details</button>
+  </div>
+  
+  <div class="car-card" data-type="sedan">
+    <img src="cars/mer/maybech  convetible.png" alt="C-Class">
+    <h3>Mercedes C-Class convertible</h3>
+    <p>Luxury Sedan • 204 HP • Diesel</p>
+    <p>₹61.85 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="Convertible">
+    <img src="cars/mer/merc s class.png" alt="GLC SUV">
+    <h3>Mercedes GLC</h3>
+    <p>Mid-size SUV • 258 HP • Petrol</p>
+    <p>₹74.45 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="electric">
+    <img src="cars/mer/merc8.png" alt="EQB 300">
+    <h3>Mercedes EQB 300</h3>
+    <p>Electric SUV • 225 HP • 423 km range</p>
+    <p>₹74.50 Lakh</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="sports">
+    <img src="cars/mer/merc5.png" alt="C63 AMG">
+    <h3>Mercedes-AMG C63</h3>
+    <p>Performance Sedan • 503 HP • V8</p>
+    <p>₹1.41 Cr</p>
+    <button>View Details</button>
+  </div>
+  
+  <div class="car-card" data-type="sports">
+    <img src="cars/mer/merc7.png" alt="AMG GTR Pro">
+    <h3>Mercedes-AMG GTR Pro</h3>
+    <p>Track Car • 577 HP • Carbon Fiber Kit</p>
+    <p>₹2.89 Cr</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="sports">
+    <img src="cars/mer/merc s class.png" alt="SL-Class">
+    <h3>Mercedes SL-Class</h3>
+    <p>Convertible GT • 469 HP • RWD</p>
+    <p>₹2.35 Cr</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="electric">
+    <img src="cars/mer/merc4.png" alt="EQS 580">
+    <h3>Mercedes EQS 580</h3>
+    <p>Electric Luxury Sedan • 516 HP • 857 km</p>
+    <p>₹1.62 Cr</p>
+    <button>View Details</button>
+  </div>
+  <div class="car-card" data-type="suv">
+    <img src="cars/mer/merc gla.png" alt="GLE SUV">
+    <h3>Mercedes GLE</h3>
+    <p>Luxury SUV • 269 HP • Diesel</p>
+    <p>₹96.40 Lakh</p>
+    <button>View Details</button>
+  </div>
+</div>
+
+
+    
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 LuxeDrive. All rights reserved.</p>
+  </footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const filter = document.getElementById("typeFilter");
+  const cards = document.querySelectorAll(".car-card");
+
+  filter.addEventListener("change", () => {
+    const selected = filter.value.toLowerCase();
+
+    cards.forEach(card => {
+      const type = card.getAttribute("data-type").toLowerCase();
+      if (selected === "all" || type === selected) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>

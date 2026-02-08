@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMW Collection Stripe</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 30px;
+    }
+
+    .collection-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .collection-row img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .collection-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .stripe-container {
+      display: flex;
+      gap: 5px;
+    }
+
+    .stripe {
+      width: 150px;
+      height: 60px;
+      transform: skew(-25deg);
+    }
+
+    .stripe.blue { background-color: #009ADA; }      /* Light Blue */
+    .stripe.navy { background-color: #252850; }      /* Dark Blue */
+    .stripe.red  { background-color: red; }          /* Red */
+  </style>
+</head>
+<body>
+
+  <div class="collection-row">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW Logo">
+    <span class="collection-title">BMW Collection</span>
+    <div class="stripe-container">
+      <div class="stripe blue"></div>
+      <div class="stripe navy"></div>
+      <div class="stripe red"></div>
+    </div>
+  </div>
+
+</body>
+</html>

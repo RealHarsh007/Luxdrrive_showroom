@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Black Friday Sale</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+  /* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Common Card Styles */
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: #111;
+  color: #fff;
+  padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.card h2 span {
+  font-weight: bold;
+  display: block;
+}
+
+.sale-text {
+  margin: 5px 0;
+  color: #ff0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Circle Offer */
+
+
+/* Button */
+.shop-btn {
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Yellow Theme */
+.card.yellow::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffc107 50%, transparent 50%);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.card.yellow .sale-text {
+  color: #ffc107;
+}
+
+.yellow-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Red Theme */
+.card.red::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f00 50%, transparent 50%);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.card.red .sale-text {
+  color: #f00;
+}
+
+.red-btn {
+  background-color: #f00;
+  color: #fff;
+}
+
+/* Layer Content Above Background */
+.card * {
+  position: relative;
+  z-index: 1;
+}
+
+</style>
+
+
+</head>
+<body>
+  <div class="container">
+    <!-- Yellow Version -->
+    <div class="card yellow">
+      <!-- <h2>Black <span>Friday</span></h2> -->
+      <p class="sale-text">SALE</p>
+      <!-- <div class="circle">
+        <p>UP TO</p>
+        <h1>50%</h1>
+        <p>OFF</p>
+      </div> -->
+      <button class="shop-btn yellow-btn">Shop Now</button>
+    </div>
+
+    <!-- Red Version -->
+    <div class="card red">
+      <h2>Black <span>Friday</span></h2>
+      <p class="sale-text">SALE</p>
+      <div class="circle">
+        <p>UP TO</p>
+        <h1>50%</h1>
+        <p>OFF</p>
+      </div>
+      <button class="shop-btn red-btn">Shop Now</button>
+    </div>
+  </div>
+</body>
+</html>

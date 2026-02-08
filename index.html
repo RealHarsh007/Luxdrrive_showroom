@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeDrive - Luxury Car Sales</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/script.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- boots -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script defer src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- boots  -->
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Swiper CSS -->
+
+
+</head>
+
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="logo">LuxeDrive</div>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">LuxeDrive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBrands"
+          aria-controls="navbarBrands" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarBrands">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+
+            <!-- Brands Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Brands
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                <li><a class="dropdown-item" href="/bmw.html">BMW</a></li>
+                <li><a class="dropdown-item" href="/audi.html">Audi</a></li>
+                <li><a class="dropdown-item" href="/lambor.html">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="mer.html">Mercedes</a></li>
+                <li><a class="dropdown-item" href="/">Porsche</a></li>
+                <li><a class="dropdown-item" href="#">Ferrari</a></li>
+              </ul>
+            </li>
+
+            <!-- Car Filters in Navbar -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="typeDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Car Type
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item type-filter" href="#" data-type="all">All</a></li>
+                <li><a class="dropdown-item type-filter" href="#" data-type="SUV">SUV</a></li>
+                <li><a class="dropdown-item type-filter" href="#" data-type="Sedan">Sedan</a></li>
+                <li><a class="dropdown-item type-filter" href="#" data-type="Convertible">Convertible</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+
+          <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search cars..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook fs-2"></i></a>
+      <a href="#"><i class="fab fa-instagram fs-2"></i></a>
+      <a href="#"><i class="fab fa-youtube fs-2"></i></a>
+    </div>
+  </header>
+
+  <!-- Slider Section -->
+  <!-- Slider Section -->
+  <section class="slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner/1.png" alt="Banner 1" /></div>
+        <div class="swiper-slide"><img src="images/banner/2.png" alt="Banner 2" /></div>
+        <div class="swiper-slide"><img src="images/banner/3.png" alt="Banner 3" /></div>
+        <div class="swiper-slide"><img src="images/banner/4.png" alt="Banner 4" /></div>
+        <div class="swiper-slide"><img src="images/banner/5.png" alt="Banner 5" /></div>
+        <div class="swiper-slide"><img src="images/banner/6.png" alt="Banner 6" /></div>
+        <div class="swiper-slide"><img src="images/banner/7.png" alt="Banner 7" /></div>
+        <div class="swiper-slide"><img src="images/banner/4.png" alt="Banner 8" /></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- details and about section -->
+
+ <!-- About Section with Equal Shadow and Size -->
+<!-- Swiper CSS in <head> -->
+
+
+<section class="about-service-section container my-5 d-flex flex-wrap justify-content-center gap-4">
+  <div class="content-box d-flex flex-wrap shadow-box rounded-4 overflow-hidden" style="max-width: 1100px; width: 100%; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+    
+    <!-- Left: About Text and Swiper -->
+   <div class="about-text col-lg-6 col-12 p-4 bg-white shadow rounded">
+  <h2 class="fw-bold mb-3">Experience Premium Luxury – Sedans, SUVs, Coupes & Supercars</h2>
+
+  <p class="text-muted fs-5">
+    At <strong>LuxeDrive</strong>, we redefine the essence of luxury in every vehicle. Our showroom features a curated selection of high-end automobiles designed to elevate your driving experience.
+  </p>
+
+  <p class="text-muted fs-5">
+    Discover our <strong>best-selling cars</strong> that combine performance and elegance—from roaring sports models to executive sedans. Each car is handpicked to meet your desires.
+  </p>
+
+  
+
+  <!-- Swiper: Brand Logos -->
+  <div class="swiper brandSwiper mt-4">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="logos/audi-removebg-preview.png" alt="Audi" class="brand-logo" /></div>
+    <div class="swiper-slide"><img src="logos/bmw-removebg-preview.png" alt="BMW" class="brand-logo" /></div>
+    <div class="swiper-slide"><img src="logos/mercedes.png" alt="Mercedes" class="brand-logo" /></div>
+    <!-- Add more as needed -->
+  </div>
+</div>
+
+</div>
+
+
+    <!-- Right: Large Image -->
+    <div class="about-image col-lg-6 col-12 p-3 bg-light d-flex align-items-center justify-content-center">
+      <img src="images/banner/banner_03.png" alt="LuxeDrive Showroom" style="max-width: 100%; height: auto; border-radius: 12px;" />
+    </div>
+    
+  </div>
+</section>
+
+<!-- Swiper JS at end of body -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+<!-- second about  -->
+
+<section class="about-service-section container my-5 d-flex flex-wrap justify-content-center gap-4">
+  <div class="content-box d-flex flex-wrap shadow-box rounded-4 overflow-hidden" style="max-width: 1100px; width: 100%; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+  
+    <!-- Right: Large Image -->
+    <div class="about-image col-lg-6 col-12 p-3 bg-light d-flex align-items-center justify-content-center">
+      <img src="images/banner/banner_01.png" alt="LuxeDrive Showroom" style="max-width: 100%; height: auto; border-radius: 12px;" />
+    </div>
+  
+    
+    <!-- Left: About Text and Swiper -->
+    <div class="about-text col-lg-6 col-12 p-4 bg-white">
+      <h2 class="fw-bold mb-3">Experience Premium Car Services</h2>
+    <p class="text-muted fs-5">
+    We partner with the world’s <strong>most luxurious brands</strong> including BMW, Mercedes, Audi, Lamborghini, and Ferrari. Experience engineering excellence and unmatched style.
+  </p>
+
+  <p class="text-muted fs-5">
+    Our service station provides <strong>car washing, detailing, maintenance, and repair services</strong> using advanced tools and certified professionals. Keep your luxury ride pristine.
+  </p>
+
+      <!-- Swiper: Brand Logos -->
+      
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- details and about section -->
+
+
+
+<!--  -->
+
+
+
+  <!-- Cars for Sale Section -->
+  <div class="cars-section">
+    
+      <h2 class="f_text">New Upcoming Models </h2>
+
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/i2.png" alt="Ford Mustang GT"  class="car_shadow"/>
+         <div class="car-shadow"></div> 
+        <h3>Ford Mustang GT</h3>
+        <div class="car-description">
+          <p><strong>Price:</strong> ₹75,00,000</p>
+          <p><strong>Mileage:</strong> 9 km/l</p>
+          <p><strong>Engine:</strong> 4951 cc V8</p>
+          <p><strong>Power:</strong> 450 hp</p>
+        </div>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="images/i3.png" alt="Audi R8" />
+        <h3>Audi R8</h3>
+        <div class="car-description">
+          <p><strong>Price:</strong> ₹2,10,00,000</p>
+          <p><strong>Mileage:</strong> 6.7 km/l</p>
+          <p><strong>Engine:</strong> 5204 cc V10</p>
+          <p><strong>Power:</strong> 602 hp</p>
+        </div>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="images/i4.png" alt="Lamborghini Huracán" />
+        <h3>Lamborghini Huracán</h3>
+        <div class="car-description">
+          <p><strong>Price:</strong> ₹3,70,00,000</p>
+          <p><strong>Mileage:</strong> 7.2 km/l</p>
+          <p><strong>Engine:</strong> 5204 cc V10</p>
+          <p><strong>Power:</strong> 631 hp</p>
+        </div>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="car-card">
+        <img src="images/i5.png" alt="Mercedes AMG GT" />
+        <h3>Mercedes AMG GT</h3>
+        <div class="car-description">
+          <p><strong>Price:</strong> ₹2,65,00,000</p>
+          <p><strong>Mileage:</strong> 8 km/l</p>
+          <p><strong>Engine:</strong> 3982 cc V8</p>
+          <p><strong>Power:</strong> 577 hp</p>
+        </div>
+        <button>Buy Now</button>
+      </div>
+
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 LuxeDrive | All rights reserved</p>
+    </footer>
+
+    <!-- js about  -->
+     <script>
+  new Swiper(".aboutImageSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+</script>
+
+    <!-- js about  -->
+
+</body>
+
+</html>

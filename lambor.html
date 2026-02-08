@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini - LuxeDrive</title>
+
+  <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="card.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- boots -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script defer src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- boots  -->
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <!-- Header/Navbar -->
+  <header>
+    <div class="logo">LuxeDrive</div>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">LuxeDrive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBrands"
+          aria-controls="navbarBrands" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarBrands">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+
+            <!-- Brands Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Brands
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                <li><a class="dropdown-item" href="/bmw.html">BMW</a></li>
+                <li><a class="dropdown-item" href="/audi.html">Audi</a></li>
+                <li>
+                  <a class="dropdown-item" href="/lambor.html">Lamborghini</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Mercedes</a></li>
+                <li><a class="dropdown-item" href="/">Porsche</a></li>
+                <li><a class="dropdown-item" href="#">Ferrari</a></li>
+              </ul>
+            </li>
+
+            <!-- Car Filters in Navbar -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="typeDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Car Type
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item type-filter" href="#" data-type="all">All</a>
+                </li>
+                <li>
+                  <a class="dropdown-item type-filter" href="#" data-type="SUV">SUV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item type-filter" href="#" data-type="Sedan">Sedan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item type-filter" href="#" data-type="Convertible">Convertible</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="fuelDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="true">
+            <i class="fa-solid fa-gear"></i>    Sevice & Accesorries <i class="fa-solid fa-wrench"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fuel-filter" href="#" data-fuel="all">Accesorries</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fuel-filter" href="#" data-fuel="Petrol"> Service</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fuel-filter" href="#" data-fuel="Diesel">Washing & Panting</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fuel-filter" href="#" data-fuel="Electric">Repairing</a>
+                </li>
+              </ul>
+            </li>
+
+           
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+
+  <!-- Lamborghini Car Cards Section -->
+<section class="cars-section" id="lamborghini">
+  <div class="text_section">
+    <img src="logos/lamborghini-logo.png" class="text_img" alt="Lamborghini Logo" />
+    <span class="f_text">Lamborghini Collection</span>
+    <div class="stripe-container">
+      <span class="stripe gold"></span>
+      <span class="stripe black"></span>
+      <span class="stripe gold"></span>
+    </div>
+  </div>
+
+  <div class="car-grid">
+
+    <!-- Huracán EVO -->
+    <div class="car-card" data-type="sports">
+      <img src="cars/lamborghini/huracan.png" alt="Lamborghini Huracán EVO" />
+      <h3>Lamborghini Huracán EVO</h3>
+      <div class="car-description">
+        <p>Sports Coupe • 631 HP • Petrol</p>
+        <p>₹3.73 Cr</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Urus -->
+    <div class="car-card" data-type="suv">
+      <img src="cars/lamborghini/urus.png" alt="Lamborghini Urus" />
+      <h3>Lamborghini Urus</h3>
+      <div class="car-description">
+        <p>Luxury SUV • 657 HP • Twin Turbo V8</p>
+        <p>₹4.18 Cr</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Revuelto -->
+    <div class="car-card" data-type="hybrid">
+      <img src="cars/lamborghini/revuelto.png" alt="Lamborghini Revuelto" />
+      <h3>Lamborghini Revuelto</h3>
+      <div class="car-description">
+        <p>Hybrid Supercar • 1015 HP • V12 Hybrid</p>
+        <p>₹10 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Aventador -->
+    <div class="car-card" data-type="sports">
+      <img src="cars/lamborghini/aventador.png" alt="Lamborghini Aventador" />
+      <h3>Lamborghini Aventador</h3>
+      <div class="car-description">
+        <p>Supercar • 769 HP • Petrol</p>
+        <p>₹6.25 Cr</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Gallardo -->
+    <div class="car-card" data-type="convertible">
+      <img src="cars/lamborghini/gallardo.png" alt="Lamborghini Gallardo Spyder" />
+      <h3>Lamborghini Gallardo Spyder</h3>
+      <div class="car-description">
+        <p>Convertible • 560 HP • V10 Petrol</p>
+        <p>₹2.85 Cr</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Sian FKP 37 -->
+    <div class="car-card" data-type="hybrid">
+      <img src="cars/lamborghini/sian.png" alt="Lamborghini Sian FKP 37" />
+      <h3>Lamborghini Sian FKP 37</h3>
+      <div class="car-description">
+        <p>Hybrid • 819 HP • Limited Edition</p>
+        <p>₹20 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Veneno -->
+    <div class="car-card" data-type="hypercar">
+      <img src="cars/lamborghini/veneno.png" alt="Lamborghini Veneno" />
+      <h3>Lamborghini Veneno</h3>
+      <div class="car-description">
+        <p>Hypercar • 740 HP • V12 Petrol</p>
+        <p>₹25 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Countach LPI 800-4 -->
+    <div class="car-card" data-type="hybrid">
+      <img src="cars/lamborghini/countach.png" alt="Lamborghini Countach LPI 800-4" />
+      <h3>Countach LPI 800-4</h3>
+      <div class="car-description">
+        <p>Retro Hybrid • 803 HP • Limited</p>
+        <p>₹11 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Essenza SCV12 -->
+    <div class="car-card" data-type="track">
+      <img src="cars/lamborghini/essenza.png" alt="Lamborghini Essenza SCV12" />
+      <h3>Lamborghini Essenza SCV12</h3>
+      <div class="car-description">
+        <p>Track Only • 830 HP • V12</p>
+        <p>₹22 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Sián Roadster -->
+    <div class="car-card" data-type="convertible">
+      <img src="cars/lamborghini/sian-roadster.png" alt="Lamborghini Sián Roadster" />
+      <h3>Lamborghini Sián Roadster</h3>
+      <div class="car-description">
+        <p>Convertible Hybrid • 819 HP • Limited</p>
+        <p>₹22 Cr+</p>
+      </div>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 LuxeDrive. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
